@@ -1,5 +1,5 @@
 { "name"          : "buffered-shell",
-  "description"   : "A tool for rapidly building command line apps",
+  "description"   : "A tool to run commands in the shell, receiving them in chunks",
   "version"       : "0.0.1",
   "homepage"      : "https://github.com/SCastaneda/buffered-shell",
   "keywords"      : ["buffered-shell","command line","console","command", "shell", "terminal"],

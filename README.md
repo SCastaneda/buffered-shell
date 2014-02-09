@@ -1,6 +1,6 @@
 #usage
 ```javascript
-var bread = require('./index');
+var bread = require('buffered-shell');
 
 var path       = "/your/custom/path";
 var delimiter  = "\n";
