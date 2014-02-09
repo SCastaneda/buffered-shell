@@ -20,7 +20,5 @@
     { }
   ],
   "engines": { "node": ">=0.2.5" },
-  "licenses": [{
-    "type": "MIT"
-  }]
+  "license" : "MIT"
 }
