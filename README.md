@@ -1,13 +1,13 @@
 #usage
 ```javascript
-var bread = require('buffered-shell');
+var bshell = require('buffered-shell');
 
 var path       = "/your/custom/path";
 var delimiter  = "\n";
 var batch_size = 20;
 
 // delimiter and batch_size are optional (default to "\n" and 20);
-var cat = bread({ cwd: path }, "cat *.js", delimiter, batch_size);
+var cat = bshell({ cwd: path }, "cat *.js", delimiter, batch_size);
 cat.start();
 
 cat.on('data', function(data) {

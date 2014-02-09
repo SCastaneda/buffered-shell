@@ -2,16 +2,16 @@ var exec         = require('child_process').exec;
 var util         = require('util');
 var assert       = require('assert');
 var EventEmitter = require('events').EventEmitter;
-var bread;
+var bshell;
 var Init;
 
 module.exports = Init;
 
 function Init(options,command, delimiter, size) {
-    return new bread(options, command, delimiter, size);
+    return new bshell(options, command, delimiter, size);
 }
 
-function bread(options, command, delimiter, size) {
+function bshell(options, command, delimiter, size) {
     // mandatory arguements
     assert(options.cwd !== undefined, "arguement 1 needs to at least have { cwd: '' } defined");
     assert(command     !== undefined, "arguement 2 (command) needs to be defined");
@@ -54,6 +54,6 @@ function start() {
     );
 }
 
-util.inherits(bread, EventEmitter);
+util.inherits(bshell, EventEmitter);
 
-bread.prototype.start = start;
+bshell.prototype.start = start;
